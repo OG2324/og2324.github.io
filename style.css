@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-columns: [fullwidth-start] 1fr [content-start] min(1200px, 100%) [content-end] 1fr [fullwidth-end];
+}
+
+body > * {
+    grid-column: content;
+}
+header {
+    padding-block: 3rem;
+    background-color: #ba0305;
+    color: white;
+}
+header p {
+    margin: 0;
+}
+
+#logo-wrapper {
+    width: fit-content;
+}
+.logo-text-top {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.logo-text-top-domain {
+    font-size: 0.75em;
+}
+
+.logo-text-bottom {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
