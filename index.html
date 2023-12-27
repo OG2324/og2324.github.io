@@ -2,21 +2,56 @@
 <html lang="cs">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GJBD Plus</title>
 </head>
 <body>
-    <header>
-        <div id="logo-wrapper">
-            <img src="" alt="" class="logo">
-            <div class="logo-text">
-                <p class="logo-text-top">
-                    <em>GJBD</em><span class="logo-text-top-domain">.cz</span>
-                </p>
-                <p class="logo-text-bottom">Gymnázio-Joachimsko-Barrandovská dilmová databáze</p>
-            </div>
+
+</body>
+    <header class="section fullwidth">
+        <div class="section-content">
+            <img src="assets/gjbd_logo.svg" id="logo">
+            <p id="header-headline">Bonusový obsah</p>
         </div>
     </header>
+    <section id="main-nav" class="section fullwidth">
+        <nav class="section-content">
+            <ul>
+                <li class="nav-item active" data-tab="tab-okrokdyl">Komiks</li>
+                <li class="nav-item" data-tab="tab-vlog">Vlog</li>
+            </ul>
+        </nav>
+    </section>
+    <section id="main-content" class="section">
+        <div class="section-content">
+            <ul class="tabs">
+                <li class="tab active" id="tab-okrokdyl">
+                    <h2 class="tab-header">Komiks</h2>
+                    <div id="okrokdyl-container">
+                        <img src="assets/okrokdyl/0.png" alt="" class="okrokdyl-img">
+                        <img src="assets/okrokdyl/1.png" alt="" class="okrokdyl-img">
+                    </div>
+                </li>
+                <li id="tab-vlog" class="tab">
+                    <h2 class="tab-header">Vlog z výletu do Norimberku s paní Klimentovou</h2>
+                    <div class="tab-title-container">
+                        <h1 class="align-center">Výlet do Norimberku</h1>
+                        <p class="align-center">18. 12. 2023</p>
+                    </div>
+                    <div id="vlog-iframe-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_DjBaWWYbkE?si=HEvPBEL1MSYAIw-M&amp;start=97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="section fullwidth">
+        <p class="align-center section-content">Půlnoční noviny - oktáva<br>Maturitní ples GJB<br>Národní dům na Vinohradech<br>5. 1. 2024</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
