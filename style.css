@@ -23,7 +23,7 @@ body {
 }
 
 header, footer {
-    padding-block: 4rem;
+    padding-block: 3rem;
     background-color: #ba0305;
     color: white;
 }
@@ -39,7 +39,7 @@ header .section-content {
 }
 
 #header-headline {
-    font-size: 3.25rem;
+    font-size: 2.25rem;
     font-weight: 500;
     text-align: right;
     margin: 0;
@@ -47,7 +47,7 @@ header .section-content {
 }
 
 #logo {
-    width: 22rem;
+    width: 18rem;
 }
 
 .tabs, #main-nav ul {
@@ -109,8 +109,8 @@ header .section-content {
 }
 
 .tab-header {
+    font-size: 1rem;
     background-color: #dbdbdb;
-    font-size: 1.25rem;
     padding-left: 1em;
     padding-block: 0.375em;
     margin: 0;
@@ -138,7 +138,7 @@ header .section-content {
     margin-inline: min(25%, 12rem);
     margin-bottom: 3rem;
     margin-top: 4.5rem;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
 }
 .tab-title-container p {
     color: #4a4a4a;
