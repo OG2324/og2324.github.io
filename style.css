@@ -62,7 +62,6 @@ header .section-content {
     border-color: #9a9a9a;
     margin-bottom: 1em;
     font-weight: 500;
-    font-size: 1.125rem;
     text-rendering: optimizeLegibility;
 }
 
@@ -96,7 +95,6 @@ header .section-content {
     margin-block: 0;
     border-top: 0.55em solid white;
     border-bottom: 0.55em solid white;
-    font-weight: 600;
 }
 
 .tab {
