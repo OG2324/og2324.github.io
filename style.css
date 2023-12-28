@@ -62,6 +62,8 @@ header .section-content {
     border-color: #9a9a9a;
     margin-bottom: 1em;
     font-weight: 500;
+    font-size: 1.125rem;
+    text-rendering: optimizeLegibility;
 }
 
 #main-nav ul {
@@ -70,6 +72,7 @@ header .section-content {
 
 #main-nav .nav-item {
     border-left: 2px solid; 
+    cursor: pointer;
 }
 
 #main-nav .nav-item:first-child,
@@ -83,25 +86,32 @@ header .section-content {
     margin-block: 0.55em;
 }
 
+#main-nav .nav-item:not(.active):hover {
+    color: black;
+}
+
 #main-nav .nav-item.active {
     background-color: white;
     color: black;
     margin-block: 0;
     border-top: 0.55em solid white;
     border-bottom: 0.55em solid white;
+    font-weight: 600;
 }
 
 .tab {
     display: none;
-    border: 2px solid #ebebeb;
+    border: 2px solid #dbdbdb;
+    opacity: 0;
 }
 
 .tab.active {
     display: block;
+    opacity: 1;
 }
 
 .tab-header {
-    background-color: #ebebeb;
+    background-color: #dbdbdb;
     font-size: 1.25rem;
     padding-left: 1em;
     padding-block: 0.375em;
@@ -110,9 +120,9 @@ header .section-content {
 }
 
 #vlog-iframe-container {
-    width: max(calc(100% - 5.5rem), 80%);
+    width: max(calc(100% - 8rem), 80%);
     margin-inline: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     position: relative;
     padding-bottom: 56.25%; /* 16/9 aspect ratio */
 }
@@ -129,7 +139,7 @@ header .section-content {
     text-align: center;
     margin-inline: min(25%, 12rem);
     margin-bottom: 3rem;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
     font-size: 1.5rem;
 }
 .tab-title-container p {
@@ -143,9 +153,6 @@ header .section-content {
     font-family: "Roboto Slab";
 }
 
-#okrokdyl-container {
-    padding: 3rem;
-}
 .okrokdyl-img {
     object-fit: contain;
     width: 100%;
