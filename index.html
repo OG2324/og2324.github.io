@@ -33,19 +33,26 @@
             <ul class="tabs">
                 <li class="tab active" id="tab-okrokdyl">
                     <h2 class="tab-header">Komiks</h2>
-                    <div id="okrokdyl-container">
-                        <img src="assets/okrokdyl/okrokdyl_web.png" alt="" class="okrokdyl-img">
+                    <div class="tab-content">
+                        <div id="okrokdyl-container">
+                            <img src="assets/okrokdyl/okrokdyl_web.png" alt="" class="okrokdyl-img">
+                        </div>
                     </div>
                 </li>
                 <li id="tab-vlog" class="tab">
                     <h2 class="tab-header">Vlog z výletu do Norimberku s paní Klimentovou</h2>
-                    <div class="tab-title-container">
-                        <h1 class="align-center">Výlet do Norimberku</h1>
-                        <p class="align-center">18. 12. 2023</p>
+                    <div class="tab-content tab-content-paddings">
+                        <div class="tab-title-container">
+                            <h1 class="align-center">Výlet do Norimberku</h1>
+                            <p class="align-center">18. 12. 2023</p>
+                        </div>
+                        <div id="vlog-iframe-container" class="tab-content-margins">
+                            <video width="560" height="315" controls preload="auto">
+                                <source src="assets/vlog_720p.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
-                    <div id="vlog-iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_DjBaWWYbkE?si=HEvPBEL1MSYAIw-M&amp;start=97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
+
                 </li>
             </ul>
         </div>

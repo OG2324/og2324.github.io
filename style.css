@@ -1,9 +1,12 @@
+:root {
+    --site-margin: 1.5rem;
+}
 .align-center {
     text-align: center;
 }
 body {
     display: grid;
-    grid-template-columns: [fullwidth-start] minmax(1.5rem, 1fr) [content-start] min(1200px, 100%) [content-end] minmax(1.5rem, 1fr) [fullwidth-end];
+    grid-template-columns: [fullwidth-start] minmax(var(--site-margin), 1fr) [content-start] min(1200px, calc(100% - 3rem)) [content-end] minmax(var(--site-margin), 1fr) [fullwidth-end];
     margin: 0;
     font-family: "Roboto";
 }
@@ -48,6 +51,7 @@ header .section-content {
 
 #logo {
     width: 20rem;
+    max-width: 50%;
 }
 
 .tabs, #main-nav ul {
@@ -81,8 +85,7 @@ header .section-content {
 }
 
 #main-nav .nav-item {
-    padding: 0.5em 2em;
-    margin-block: 0.55em;
+    padding: 1.05em 2em;
 }
 
 #main-nav .nav-item:not(.active):hover {
@@ -95,11 +98,11 @@ header .section-content {
     margin-block: 0;
     border-top: 0.55em solid white;
     border-bottom: 0.55em solid white;
+    padding-block: 0.5em;
 }
 
 .tab {
     display: none;
-    border: 2px solid #dbdbdb;
     opacity: 0;
 }
 
@@ -117,27 +120,31 @@ header .section-content {
     font-weight: 500;
 }
 
+.tab-content {
+    border: 2px solid #dbdbdb;
+}
+.tab-content-paddings {
+    padding: 5%;
+}
+
 #vlog-iframe-container {
-    width: max(calc(100% - 8rem), 80%);
-    margin-inline: auto;
-    margin-bottom: 6rem;
     position: relative;
     padding-bottom: 56.25%; /* 16/9 aspect ratio */
 }
 
-#vlog-iframe-container iframe{
+#vlog-iframe-container iframe, #vlog-iframe-container video {
     width: 100%;
     height: 100%;
     position: absolute;
     inset: 0;
+    object-fit: cover;
 
 }
 
 .tab-title-container {
+    
     text-align: center;
-    margin-inline: min(25%, 12rem);
-    margin-bottom: 3rem;
-    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
     font-size: 1.125rem;
 }
 .tab-title-container p {
@@ -154,4 +161,51 @@ header .section-content {
 .okrokdyl-img {
     object-fit: contain;
     width: 100%;
+}
+
+@media only screen and (max-width: 920px) {
+    .nav-item {
+        font-size: 0.875rem;
+    }
+
+    header, footer {
+        padding-block: 2.35rem;
+    }
+    #header-headline {
+        font-size: 1.65rem;
+    }
+
+    .tab-title-container {
+        font-size: 1rem;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --site-margin: 0rem;
+    }
+    #logo {
+        max-width: 80%;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header .section-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #header-headline {
+        font-size: 1.25rem;
+    }
+
+    .tab-header {
+        font-size: 0.875rem;
+    }
+    .tab-title-container {
+        font-size: 0.75rem;
+    }
 }
