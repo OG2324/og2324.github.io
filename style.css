@@ -122,6 +122,7 @@ header .section-content {
 
 .tab-content {
     border: 2px solid #dbdbdb;
+    border-top: none;
 }
 .tab-content-paddings {
     padding: 5%;
